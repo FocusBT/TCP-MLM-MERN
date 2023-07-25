@@ -39,7 +39,7 @@ export default function Register({ url }) {
     console.log(values);
     try {
       // values.referralCode = String(values.referralCode);
-      const response = await fetch(`http://localhost:5000/signup`, {
+      const response = await fetch(`https://tcp-mlm-apis-production.up.railway.app/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
