@@ -52,7 +52,7 @@ function NewRequests() {
   };
   const handleDecision = async (email, decision) => {
     const values = { email, decision };
-    const response = await fetch(`https://github.com/sarangaswani/CPT-MLM/invest`, {
+    const response = await fetch(`https://tcp-mlm-apis-production.up.railway.app/invest`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
