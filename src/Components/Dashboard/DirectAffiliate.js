@@ -24,7 +24,7 @@ function DirectAffiliate() {
     const values = {
       email: currentUser.email,
     };
-    const response = await fetch(`http://localhost:5000/direct-referrals`, {
+    const response = await fetch(`https://tcp-mlm-apis-production.up.railway.app/direct-referrals`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
