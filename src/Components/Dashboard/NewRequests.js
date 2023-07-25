@@ -52,7 +52,7 @@ function NewRequests() {
   };
   const handleDecision = async (email, decision) => {
     const values = { email, decision };
-    const response = await fetch(`http://localhost:5000/invest`, {
+    const response = await fetch(`https://github.com/sarangaswani/CPT-MLM/invest`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
