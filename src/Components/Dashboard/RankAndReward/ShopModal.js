@@ -47,7 +47,7 @@ const PortalSlider = ({ images, onClose, product }) => {
       console.log(formData);
       try {
         const response = await fetch(
-          "https://tcp-mlm-apis-production.up.railway.app/addRequest",
+          "https://tcp-mlm-apis-production-e4ae.up.railway.app/addRequest",
           {
             method: "POST",
             body: formData,

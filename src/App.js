@@ -22,7 +22,7 @@ function App() {
         email: email,
       };
       const response = await fetch(
-        `https://tcp-mlm-apis-production.up.railway.app/all-referrals`,
+        `https://tcp-mlm-apis-production-e4ae.up.railway.app/all-referrals`,
         {
           method: "POST",
           headers: {

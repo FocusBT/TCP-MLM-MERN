@@ -23,7 +23,7 @@ function AllRequests() {
 
   const fetchAllRequests = async () => {
     const response = await fetch(
-      `https://tcp-mlm-apis-production.up.railway.app/getAllRequests`,
+      `https://tcp-mlm-apis-production-e4ae.up.railway.app/getAllRequests`,
       {
         method: "POST",
         headers: {

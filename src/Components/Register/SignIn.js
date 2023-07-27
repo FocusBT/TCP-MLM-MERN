@@ -25,7 +25,7 @@ export default function Example() {
   const handleSubmit = async (values, { setFieldError }) => {
     try {
       const response = await fetch(
-        `https://tcp-mlm-apis-production.up.railway.app/login`,
+        `https://tcp-mlm-apis-production-e4ae.up.railway.app/login`,
         {
           method: "POST",
           headers: {
@@ -79,7 +79,7 @@ export default function Example() {
         email: email,
       };
       const response = await fetch(
-        `https://tcp-mlm-apis-production.up.railway.app/all-referrals`,
+        `https://tcp-mlm-apis-production-e4ae.up.railway.app/all-referrals`,
         {
           method: "POST",
           headers: {

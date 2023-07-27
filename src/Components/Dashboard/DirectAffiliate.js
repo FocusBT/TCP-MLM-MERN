@@ -24,13 +24,16 @@ function DirectAffiliate() {
     const values = {
       email: currentUser.email,
     };
-    const response = await fetch(`https://tcp-mlm-apis-production.up.railway.app/direct-referrals`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
-    });
+    const response = await fetch(
+      `https://tcp-mlm-apis-production-e4ae.up.railway.app/direct-referrals`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      }
+    );
     const data = await response.json();
     setDirectAddilliate(data);
     console.log(data);

@@ -25,7 +25,7 @@ function NewRequests() {
 
   const getNewRequests = async () => {
     const response = await fetch(
-      `https://tcp-mlm-apis-production.up.railway.app/getNewRequests`,
+      `https://tcp-mlm-apis-production-e4ae.up.railway.app/getNewRequests`,
       {
         method: "POST",
         headers: {
@@ -52,13 +52,16 @@ function NewRequests() {
   };
   const handleDecision = async (email, decision) => {
     const values = { email, decision };
-    const response = await fetch(`https://tcp-mlm-apis-production.up.railway.app/invest`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
-    });
+    const response = await fetch(
+      `https://tcp-mlm-apis-production-e4ae.up.railway.app/invest`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      }
+    );
     const data = await response.json();
     console.log(data, response);
   };

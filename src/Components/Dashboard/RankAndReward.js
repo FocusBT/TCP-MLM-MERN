@@ -46,7 +46,7 @@ function RankAndReward() {
 
     console.log(values);
     const response = await fetch(
-      "https://tcp-mlm-apis-production.up.railway.app/claimRankandReward",
+      "https://tcp-mlm-apis-production-e4ae.up.railway.app/claimRankandReward",
       {
         method: "POST",
         headers: {
